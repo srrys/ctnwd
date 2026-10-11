@@ -137,4 +137,7 @@ function MathLiDL() {
     localStorage.setItem("mathLi1", "true");
   }
 }
+function tutorial() {
+  userCode.value = "createNewGameWindow \ncreateNewBlock \ndoc = \nHello World! \nendDoc";
+}
 console.log("testing again 😢");
