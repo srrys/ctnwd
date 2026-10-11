@@ -33,6 +33,12 @@ function run() {
       let Mtotal = MULTa * MULTb;
       out.innerHTML += ` ${Mtotal}`;
     }
+    if (lines.includes("MathOfMonkey =") && lines[lines.findIndex(item => item.includes("MathOfMonkey =")) + 3] === "endMonkey") {
+      let UNO = lines[lines.findIndex(item => item.includes("plusItems =")) + 1];
+      let DOS = lines[lines.findIndex(item => item.includes("plusItems =")) + 2];
+      let TOTAL = UNO + DOS;
+      out.innerHTML += ` ${TOTAL}`;
+    }
   }
   if (userCode.split("\n")[0].includes("--help--")) {
     out.innerHTML = "//HELP:  doc =           \n prints one line of code on the console \n endDoc <- closes doc." + lineDos + lineTres;
