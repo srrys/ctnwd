@@ -107,10 +107,7 @@ function goAwayError() {
   error.innerHTML = "";
   error.style.display = "none";
 }
-function tutorial() {
-  document.getElementById("input").value = "createNewUiWindow \nnewTitle =\nExample Interface \nnewButton = \nSay hello\ndoc =\nhello\nendDoc\n endButton";
-}
-console.log("oak vers 1.1.0");
+console.log("SimpLang vers 1.1.0");
 console.log("goonbot");
 function clicked() {
   const lines = document.getElementById("input").value.split("\n");
