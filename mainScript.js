@@ -107,10 +107,21 @@ function clicked() {
 function gotonews() {
   window.location.href = "news.html";
 }
-function SimplangDL() {
-  localStorage.setItem("simpLang1", "true");
-}
 function MovebotDL() {
-  localStorage.setItem("moveBot1", "true")
+  localStorage.setItem("moveBot1", "true");
+  if (localStorage.getItem("mathLi1") === "true") {
+    alert("MoveBot is already downloaded.");
+  }
+  else {
+    alert("MoveBot Downloaded.");
+  }
+}
+function MathLiDL() {
+  if (localStorage.getItem("mathLi1") === "true") {
+    alert("MathLi is already downloaded.");
+  }
+  else {
+    alert("MathLi Downloaded.");
+  }
 }
 console.log("testing again 😢");
