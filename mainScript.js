@@ -138,6 +138,6 @@ function MathLiDL() {
   }
 }
 function tutorial() {
-  userCode.value = "createNewGameWindow \ncreateNewBlock \ndoc = \nHello World! \nendDoc";
+  document.getElementById("input").value = "createNewGameWindow \ncreateNewBlock \ndoc = \nHello World! \nendDoc";
 }
 console.log("testing again 😢");
