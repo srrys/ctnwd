@@ -20,12 +20,26 @@ function run() {
       movementP.style.display = "block";
     }
   }
+  if (localStorage.getItem("mathLi1") === "true") {
+    if (lines.includes("plusItems =") && lines[lines.findIndex(item => item.includes("plusItmes =")) + 3] === "endPlus") {
+      let UNO = lines[lines.findIndex(item => item.includes("plusItems =")) + 1];
+      let DOS = lines[lines.findIndex(item => item.includes("plusItems =")) + 2];
+      let TOTAL = UNO + DOS;
+      out.innerHTML += ` ${TOTAL}`;
+    }
+    if (lines.includes("multItems =") && lines[lines.findIndex(item => item.includes("multItems =")) + 3] === "endMult") {
+      let MULTa = lines[lines.findIndex(item => item.includes("multItems =")) + 1];
+      let MULTb = lines[lines.findIndex(item => item.includes("multItems =")) + 2];
+      let Mtotal = MULTa * MULTb;
+      out.innerHTML += ` ${Mtotal}`;
+    }
+  }
   if (userCode.split("\n")[0].includes("--help--")) {
     out.innerHTML = "//HELP:  doc =           \n prints one line of code on the console \n endDoc <- closes doc." + lineDos + lineTres;
   }
   if (userCode.includes("doc  =") || userCode.includes("doc=")) {
     error.style.display = "block";
-    error.innerHTML = `Type error. doc must have exactly one space from equal.`;
+    error.innerHTML = "Type error. doc must have exactly one space from equal.";
   }
   if (userCode.includes("createNewGameWindow")) {
     windowE.style.display = "block";
@@ -114,6 +128,7 @@ function MovebotDL() {
   }
   else {
     alert("MoveBot Downloaded.");
+    localStorage.setItem("moveBot1", "true");
   }
 }
 function MathLiDL() {
@@ -122,6 +137,7 @@ function MathLiDL() {
   }
   else {
     alert("MathLi Downloaded.");
+    localStorage.setItem("mathLi1", "true");
   }
 }
 console.log("testing again 😢");
