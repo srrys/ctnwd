@@ -15,51 +15,59 @@
   </div>
   <span id="main_content" class="ggh">
     <table>
-      <p style="color: white;">Visit the <a href="news.html">docs</a> page for tutorials, extentions, and news.</p>
       <tr>
-        <textarea id="input" class="code" style="width: 350px; height: 130px;" maxlength="650">Insert code here.</textarea>
+        <td colspan="2">
+          <p style="color: white;">Visit the <a href="news.html">docs</a> page for tutorials, extentions, and news.</p>
+        </td>
       </tr>
       <tr>
-        <div class="out">
-          <div style="background-color: #3b3b3b; width:350px; height: 250px">
-            <div style="background-color: #ffffff; width: 350px; height: 30px">
-              <button onclick="run()">Run code</button>
-              <button onclick="save()">Save</button>
-              <button onclick="load()">Load</button>
-            </div>
-            <div class="Ocont">
-              <b>------------CONSOLE------------</b>
-              <p id="errors" style="color: #ba1e2b;" onclick="goAwayError()" class="errors"></p>
-              <p id="output"></p>
-            </div>
-            <div class="window" id="window">
-              <div id="blockA" style="display: none;" class="redblock"></div>
-              <div id="moveMP" class="mp">
-                <table>
-                  <tr>
-                    <td> </td>
-                    <td class="smalltext">^</td>
-                    <td> </td>
-                  </tr>
-                  <tr>
-                    <td> < </td>
-                    <td> </td>
-                    <td> > </td>
-                  </tr>
-                </table>
+        <td>
+          <textarea id="input" class="code" style="width: 350px; height: 130px;" maxlength="650">Insert code here.</textarea>
+        </td>
+        <td>
+          <div class="out">
+            <div style="background-color: #3b3b3b; width:350px; height: 250px">
+              <div style="background-color: #ffffff; width: 350px; height: 30px">
+                <button onclick="run()">Run code</button>
+                <button onclick="save()">Save</button>
+                <button onclick="load()">Load</button>
+              </div>
+              <div class="Ocont">
+                <b>------------CONSOLE------------</b>
+                <p id="errors" style="color: #ba1e2b;" onclick="goAwayError()" class="errors"></p>
+                <p id="output"></p>
+              </div>
+              <div class="window" id="window">
+                <div id="blockA" style="display: none;" class="redblock"></div>
+                <div id="moveMP" class="mp">
+                  <table>
+                    <tr>
+                      <td> </td>
+                      <td class="smalltext">^</td>
+                      <td> </td>
+                    </tr>
+                    <tr>
+                      <td> < </td>
+                      <td> </td>
+                      <td> > </td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+              <div class="windowUI" id="UIwindow">
+                <b id="titleA">//no title</b>
+                <button id="buttonA" class="Bwin" onclick="clicked()">//no title</button>
               </div>
             </div>
-            <div class="windowUI" id="UIwindow">
-              <b id="titleA">//no title</b>
-              <button id="buttonA" class="Bwin" onclick="clicked()">//no title</button>
-            </div>
           </div>
-        </div>
+        </td>
       </tr>
       <tr>
-        <div id="oakAlienM">
+        <td colspan="2">
+          <div id="oakAlienM">
             <img src="oakieM.png" onclick="gotonews()">
-        </div>
+          </div>
+        </td>
       </tr>
     </table>
   </span>
