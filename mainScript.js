@@ -21,10 +21,10 @@ function run() {
     }
   }
   if (localStorage.getItem("mathLi1") === "true") {
-    if (lines.includes("plusItems =") && lines[lines.findIndex(item => item.includes("plusItmes =")) + 3] === "endPlus") {
+    if (lines.includes("plusItems =") && lines[lines.findIndex(item => item.includes("plusItems =")) + 3] === "endPlus") {
       let UNO = lines[lines.findIndex(item => item.includes("plusItems =")) + 1];
       let DOS = lines[lines.findIndex(item => item.includes("plusItems =")) + 2];
-      let TOTAL = UNO + DOS;
+      let TOTAL = Number(UNO) + Number(DOS);
       out.innerHTML += ` ${TOTAL}`;
     }
     if (lines.includes("multItems =") && lines[lines.findIndex(item => item.includes("multItems =")) + 3] === "endMult") {
