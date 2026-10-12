@@ -146,4 +146,11 @@ function MathLiDL() {
 function tutorial() {
   document.getElementById("input").value = "createNewGameWindow \ncreateNewBlock \ndoc = \nHello World! \nendDoc";
 }
-console.log("testing again 😢");
+function mongtolmer() {
+  if (localStorage.getItem("mathLi1") === "true") {
+    document.getElementById("mli").style.display = "block";
+  }
+  if (localStorage.getItem("moveBot1") === "true") {
+    document.getElementById("mbi").style.display = "block";
+  }
+}
