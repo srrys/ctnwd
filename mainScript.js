@@ -150,7 +150,13 @@ function mongtolmer() {
   if (localStorage.getItem("mathLi1") === "true") {
     document.getElementById("mli").style.display = "block";
   }
+  else {
+    document.getElementById("mli").style.display = "none";
+  }
   if (localStorage.getItem("moveBot1") === "true") {
     document.getElementById("mbi").style.display = "block";
+  }
+  else {
+    document.getElementById("mbi").style.display = "none";
   }
 }
