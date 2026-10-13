@@ -2,10 +2,10 @@ const error = document.getElementById("errors");
 const user = document.getElementById("username");
 const blockE = document.getElementById("blockA");
 function right() {
-  blockE.style.top = (parseInt(blockE.style.top) + 7) + px;
+  blockE.style.top = (parseInt(blockE.style.top) + 7) + "px";
 }
 function left() {
-  blockE.style.top = (parseInt(blockE.style.top) - 7) + px;
+  blockE.style.top = (parseInt(blockE.style.top) - 7) + "px";
 }
 function run() {
   console.log("running");
