@@ -1,12 +1,18 @@
 const error = document.getElementById("errors");
 const user = document.getElementById("username");
 const blockE = document.getElementById("blockA");
-blockE.style.top = "0px";
+blockE.style.top = "105px";
 function right() {
-  blockE.style.top = (parseInt(blockE.style.top) + 7) + "px";
+  blockE.style.right = (parseInt(blockE.style.right) + 7) + "px";
 }
 function left() {
-  blockE.style.top = (parseInt(blockE.style.top) - 7) + "px";
+  blockE.style.left = (parseInt(blockE.style.left) + 7) + "px";
+}
+function up() {
+  blockE.classList.replace("normWG","jump");
+  setTimeout(() => {
+    blockE.classlist.replace("jump", "normWG");
+  }, 1000);
 }
 function run() {
   console.log("running");
@@ -97,6 +103,7 @@ function run() {
       setTimeout(() => {
         blockE.classList.remove("grav");
         blockE.classList.add("normWG");
+        blockE.classList.remove("redblock");
       }, 1000);
     }
   }  
