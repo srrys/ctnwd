@@ -1,6 +1,7 @@
 const error = document.getElementById("errors");
 const user = document.getElementById("username");
 const blockE = document.getElementById("blockA");
+blockE.style.top = "0px";
 function right() {
   blockE.style.top = (parseInt(blockE.style.top) + 7) + "px";
 }
