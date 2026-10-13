@@ -1,5 +1,12 @@
 const error = document.getElementById("errors");
 const user = document.getElementById("username");
+const blockE = document.getElementById("blockA");
+function right() {
+  blockE.style.top = (parseInt(blockE.style.top) + 7) + px;
+}
+function left() {
+  blockE.style.top = (parseInt(blockE.style.top) - 7) + px;
+}
 function run() {
   console.log("running");
   let lineDos = "createNewWindow <- creates new window for graphics. ";
@@ -8,7 +15,6 @@ function run() {
   const lines = userCode.split("\n");
   const out = document.getElementById("output");
   const windowE = document.getElementById("window");
-  const blockE = document.getElementById("blockA");
   const signedInDude = document.getElementById("");
   const buttonW = document.getElementById("buttonA");
   const windowUI = document.getElementById("UIwindow");
