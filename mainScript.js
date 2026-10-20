@@ -85,6 +85,9 @@ function run() {
       buttonW.innerHTML = buttonTitle;
     }
   }
+  if (userCode.includes("newButton =") && userCode.includes("endButton")) {
+    
+  }
   if (titleTitle) {
     document.getElementById("titleA").innerHTML = titleTitle;
   }
@@ -104,7 +107,7 @@ function run() {
         blockE.classList.remove("grav");
         blockE.classList.add("normWG");
         blockE.classList.remove("redblock");
-      }, 1000);
+      }, 1000);s
     }
   }  
   if (lines.length === 0) {
