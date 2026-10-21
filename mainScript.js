@@ -69,7 +69,7 @@ function run() {
     windowUI.style.display = "block";
     windowE.style.backgroundImage = "none";
   }
-  if (userCode.includes("newPara =") && lines[lines.findIndex(item => item.includes("newPara")) + 2] === "endPara") {
+  if (userCode.includes("newPara =") && lines[lines.findIndex(item => item.includes("newPara =")) + 2].includes("endPara")) {
     document.getElementById("paragraphText").innerHTML = lines[lines.findIndex(item => item.includes("newPara")) + 1]
   }
   if (userCode.includes("createNewButton") && userCode.includes("createNewUiWindow")) {
