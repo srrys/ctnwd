@@ -2,7 +2,7 @@ const error = document.getElementById("errors");
 const user = document.getElementById("username");
 const blockE = document.getElementById("blockA");
 blockE.style.top = "105px";
-function right() {
+function right() { 
   blockE.style.right = (parseInt(blockE.style.right) + 7) + "px";
 }
 function left() {
