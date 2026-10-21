@@ -180,3 +180,6 @@ function mongtolmer() {
     document.getElementById("mbi").style.display = "none";
   }
 }
+function appe() {
+  document.getElementById("lowerSett").style.display = "none";
+}
