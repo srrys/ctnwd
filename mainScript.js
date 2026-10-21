@@ -189,5 +189,6 @@ function darkLight() {
   }
   else {
     document.body.style.backgroundColor = "black";
+    document.getElementById("g").style.border = "2px solid black";
   }
 }
