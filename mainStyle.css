@@ -3,7 +3,7 @@ body {
   font-family: Courier New;
 }
 .heading {
-  background: linear-gradient(to right, #b30505, #e66e05);
+  background: linear-gradient(to right, white, #e3e3e3);
   display: grid;
   place-items: center;
   width: 100vw;
