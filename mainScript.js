@@ -58,7 +58,7 @@ function run() {
   }
   if (userCode.includes("doc  =") || userCode.includes("doc=")) {
     error.style.display = "block";
-    error.innerHTML = "Type error. doc must have exactly one space from equal.";
+    error.innerHTML = "Type error. doc must have exactly one space after the equals sign.";
   }
   if (userCode.includes("createNewGameWindow")) {
     windowE.style.display = "block";
@@ -68,6 +68,9 @@ function run() {
   if (userCode.includes("createNewUiWindow")) {
     windowUI.style.display = "block";
     windowE.style.backgroundImage = "none";
+  }
+  if (userCode.includes("newPara =") && lines[lines.findIndex(item => item.includes("newPara")) + 2] === "endPara") {
+    document.getElementById("paragraphText").innerHTML = lines[lines.findIndex(item => item.includes("newPara")) + 1]
   }
   if (userCode.includes("createNewButton") && userCode.includes("createNewUiWindow")) {
     buttonW.style.display = "block";
