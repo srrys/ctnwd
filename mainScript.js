@@ -181,5 +181,5 @@ function mongtolmer() {
   }
 }
 function appe() {
-  document.getElementById("lowerSett").style.display = "none";
+  document.getElementById("lowerSett").style.display = "block";
 }
