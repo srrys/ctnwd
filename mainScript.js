@@ -183,3 +183,11 @@ function mongtolmer() {
 function appe() {
   document.getElementById("lowerSett").style.display = "block";
 }
+function darkLight() {
+  if (document.body.style.backgroundColor === "black" || document.body.style.backgroundColor === "#000000") {
+    document.body.style.backgroundColor = "white";
+  }
+  else {
+    document.body.style.backgroundColor = "white";
+  }
+}
