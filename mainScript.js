@@ -179,6 +179,13 @@ function mongtolmer() {
   else {
     document.getElementById("mbi").style.display = "none";
   }
+  if (localStorage.getItem("darkL") === "black") {
+    document.body.style.backgroundColor = "white";
+    document.getElementById("g").style.border = "2px solid black";
+  }
+  else {
+    document.body.style.backgroundColor = "black";
+  }
 }
 function appe() {
   document.getElementById("lowerSett").style.display = "block";
@@ -186,9 +193,11 @@ function appe() {
 function darkLight() {
   if (document.body.style.backgroundColor === "black" || document.body.style.backgroundColor === "#000000") {
     document.body.style.backgroundColor = "white";
+    localStorage.setItem("darkL", "white");
+    document.getElementById("g").style.border = "2px solid black";
   }
   else {
     document.body.style.backgroundColor = "black";
-    document.getElementById("g").style.border = "2px solid black";
+    localStorage.setItem("darkL", "black");
   }
 }
